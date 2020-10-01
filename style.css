@@ -1,0 +1,61 @@
+
+body{
+    margin: 0;
+    background-color: deepskyblue;    
+}
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.genius{
+    display: grid;
+    grid-template-areas: 'green red' 'yellow blue';    
+    grid-gap:10px;
+    border: 30px solid #030000;
+    background-color: #0e0505;
+    border-radius: 100%;
+    width: 600px;
+    height: 600px;
+  
+
+}
+/* redesenhando o cirulo interno do jogo para ficar o mais proximo do real na imagem em breve.
+.genis{
+    
+    background: rgb(7, 14, 13);
+    border-radius: 100%;
+    left: 10px;
+    top: 10px;
+     
+}
+*/
+
+.blue{
+    grid-area: blue;
+    background-color:blue;
+    border-bottom-right-radius: 100%;
+}
+.red{
+    grid-area: red;
+    background-color: red;
+   border-top-right-radius: 100%;
+
+}
+.green{
+    grid-area: green;
+    background-color: green;
+   border-top-left-radius: 100%;
+
+}
+
+.yellow{
+    grid-area: yellow;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+.selected{
+    opacity: 0.4;
+}
